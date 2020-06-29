@@ -222,3 +222,67 @@ body {
   align-items: center;
   /* color: var(--title-color) */
 }
+
+
+
+@media (max-width: 900px) {
+  #page-cadastro header {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #page-cadastro .field-group {
+    flex-direction: column;
+  }
+
+  #page-cadastro form .field-group .field + .field {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 375px) {
+  #page-cadastro header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #page-cadastro header .header-logo {
+    width: 250px;
+    height: 50px;
+    margin-bottom: 20px;
+  }
+
+  #page-cadastro header a {
+    cursor: pointer;
+    font-family: 'Roboto';
+  }
+
+  #page-cadastro header a img {
+    height: 25px;
+  }
+
+  #page-cadastro form{
+    display: flex;
+    padding: 30px;
+    max-width: 500px !important;
+  }
+
+  form #map {
+    width: 310px !important;
+    height: 200px !important;
+  }
+
+  #page-cadastro form legend {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .items-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .items-grid li {
+    margin: 5px;
+  }
+}

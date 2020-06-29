@@ -9,7 +9,7 @@
   <body>
     <div id="page-cadastro">
       <header>
-        <img src="/Assets/Logo/Logo.png" alt="logo">
+        <img class="header-logo" src="/Assets/Logo/Logo.png" alt="logo">
 
         <a href="#">
           <img src="/Assets/Icone/Voltar.png" alt="seta-voltar">
@@ -17,7 +17,7 @@
         </a>
       </header>
 
-      <form>
+      <form id="formulario">
         <h1>Cadastro <br> de Resgate</h1>
 
         <fieldset>
@@ -31,6 +31,7 @@
               type="text"
               name="name"
               id="name"
+              required
             />
           </div>
 
@@ -41,6 +42,7 @@
                 type="email"
                 name="email"
                 id="email"
+                required
               />
             </div>
 
@@ -50,6 +52,7 @@
                 type="text"
                 name="whatsapp"
                 id="whatsapp"
+                required
               />
             </div>
           </div>
@@ -67,13 +70,13 @@
           <div class="field-group">
             <div class="field">
               <label for="uf">Estado (UF)</label>
-              <select name="uf" id="uf">
+              <select name="uf" id="uf" required>
                 <option value="">Selecione uma UF</option>
               </select>
             </div>
             <div class="field">
               <label for="city">Cidade</label>
-              <select name="city" disabled>
+              <select name="city" disabled required>
                 <option value="0">Selecione uma cidade</option>
               </select>
             </div>
@@ -101,11 +104,14 @@
           </ul>
         </fieldset>
 
-        <button type="submit">Cadastrar o seu resgate</button>
+        <button type="submit" onclick="clicou()">Cadastrar o seu resgate</button>
+        <span id="cadastrou">
+          
+        </span>
       </form>
     </div>
 
-    <script src="js/index.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
