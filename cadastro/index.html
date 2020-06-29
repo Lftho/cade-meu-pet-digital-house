@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+  <body>
+    <div id="page-cadastro">
+      <header>
+        <img src="/Assets/Logo/Logo.png" alt="logo">
+
+        <a href="#">
+          <img src="/Assets/Icone/Voltar.png" alt="seta-voltar">
+          Voltar para cadastro
+        </a>
+      </header>
+
+      <form>
+        <h1>Cadastro <br> de Resgate</h1>
+
+        <fieldset>
+          <legend>
+            <h2>Dados</h2>
+          </legend>
+
+          <div class="field">
+            <label for="name">Nome do responsável</label>
+            <input 
+              type="text"
+              name="name"
+              id="name"
+            />
+          </div>
+
+          <div class="field-group">
+            <div class="field">
+              <label for="email">E-mail</label>
+              <input 
+                type="email"
+                name="email"
+                id="email"
+              />
+            </div>
+
+            <div class="field">
+              <label for="name">Whatsapp</label>
+              <input 
+                type="text"
+                name="whatsapp"
+                id="whatsapp"
+              />
+            </div>
+          </div>
+
+        </fieldset>
+
+        <fieldset>          
+          <legend>
+            <h2>Endereço</h2>
+            <span>Selecione o endereço no mapa</span>
+          </legend>
+
+          <div id="map"></div>
+
+          <div class="field-group">
+            <div class="field">
+              <label for="uf">Estado (UF)</label>
+              <select name="uf" id="uf">
+                <option value="">Selecione uma UF</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="city">Cidade</label>
+              <select name="city" disabled>
+                <option value="0">Selecione uma cidade</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            <h2>Fotos do pet</h2>
+            <span>Informe algumas fotos do pet perdido</span>
+          </legend>
+          <ul class="items-grid">
+            <li>
+              <!-- <img src="/Assets/Foto/foto01.png" alt=""> -->
+              <span>Foto 01</span>
+            </li>
+            <li>
+              <!-- <img src="/Assets/Foto/foto02.png" alt=""> -->
+              <span>Foto 02</span>
+            </li>
+            <li>
+              <!-- <img src="/Assets/Foto/foto03.png" alt=""> -->
+              <span>Foto 03</span>
+            </li>
+          </ul>
+        </fieldset>
+
+        <button type="submit">Cadastrar o seu resgate</button>
+      </form>
+    </div>
+
+    <script src="js/index.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+  </body>
+</html>
