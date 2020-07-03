@@ -80,3 +80,58 @@ header {
   overflow: hidden;
   transform: translateY(100px);
 }
+
+/*-----------------------------------MEDIA QUERIES COMEÇO----------------------------*/
+@media screen and (min-width: 768px) {
+  .carousel-control .glyphicon-chevron-left {
+    margin-left: -20px !important; 
+  }
+}
+
+.carousel-control .glyphicon-chevron-left {
+  margin-left: -25px !important; 
+}
+
+.back {
+  background-color: #EFAB01;
+}
+
+/* info button */
+/* .info-pet {
+  display: flex;
+  align-items: center;
+} */
+
+.container-info header {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-logo {
+  position: relative;
+  bottom: 20px;
+}
+
+.info-pet span{
+  font-family: 'Roboto';
+  font-size: 16px;
+  margin: 5px;
+  text-decoration: underline;
+
+  color: #222;
+  font-weight: 800;
+}
+
+.text-mensagem {
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  width: 100%;
+}
+
+.mensagem {
+  width: 600px;
+}

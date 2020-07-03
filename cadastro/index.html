@@ -1,117 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-Br">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadê meu pet?</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-  <body>
+
+<body>
     <div id="page-cadastro">
-      <header>
-        <img class="header-logo" src="/Assets/Logo/Logo.png" alt="logo">
+        <header>
+            <img id="principal" src="/Assets/Logo/Logo.png" alt="logo">
 
-        <a href="#">
-          <img src="/Assets/Icone/Voltar.png" alt="seta-voltar">
-          Voltar para cadastro
-        </a>
-      </header>
+            <a class="seta-voltar" href="/index.html">
+                <img src="../Assets/Icone/Voltar.png" alt="seta-voltar">
+                Voltar para cadastro
+            </a>
+        </header>
 
-      <form id="formulario">
-        <h1>Cadastro <br> de Resgate</h1>
+        <form>
+            <h1>Cadastro <br> de Resgate</h1>
 
-        <fieldset>
-          <legend>
-            <h2>Dados</h2>
-          </legend>
+            <section>
+       
+                
+                <div class="boxImage">
+                    <p class="boxFile">
+                        <!-- <input type="file" name="file" id="file" hidden> -->
+                        <input type="file" id="files" multiple class="files00"/>
+                        <input type="file" id="files1" multiple class="files00"/>
+                        <input type="file" id="files2" multiple class="files00"/>
 
-          <div class="field">
-            <label for="name">Nome do responsável</label>
-            <input 
-              type="text"
-              name="name"
-              id="name"
-              required
-            />
-          </div>
+                        <span></span>
+                        Imagem do animalzinho
+                    </p>   
+                </div>
+            </section>
 
-          <div class="field-group">
-            <div class="field">
-              <label for="email">E-mail</label>
-              <input 
-                type="email"
-                name="email"
-                id="email"
-                required
-              />
-            </div>
+            <fieldset>
+                <legend>
+                    <h2>Dados</h2>
+                </legend>
 
-            <div class="field">
-              <label for="name">Whatsapp</label>
-              <input 
-                type="text"
-                name="whatsapp"
-                id="whatsapp"
-                required
-              />
-            </div>
-          </div>
+                <div class="field">
+                    <label for="name">Nome do responsável</label>
+                    <input type="text" name="name" id="name" />
+                </div>
 
-        </fieldset>
+                <div class="field-group">
+                    <div class="field">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" />
+                    </div>
 
-        <fieldset>          
-          <legend>
-            <h2>Endereço</h2>
-            <span>Selecione o endereço no mapa</span>
-          </legend>
+                    <div class="field">
+                        <label for="name">Whatsapp</label>
+                        <input type="text" name="whatsapp" id="whatsapp" />
+                    </div>
+                </div>
 
-          <div id="map"></div>
+            </fieldset>
 
-          <div class="field-group">
-            <div class="field">
-              <label for="uf">Estado (UF)</label>
-              <select name="uf" id="uf" required>
-                <option value="">Selecione uma UF</option>
-              </select>
-            </div>
-            <div class="field">
-              <label for="city">Cidade</label>
-              <select name="city" disabled required>
-                <option value="0">Selecione uma cidade</option>
-              </select>
-            </div>
-          </div>
-        </fieldset>
+            <fieldset>
+                <legend>
+                    <h2>Endereço</h2>
+                    <span>Selecione o endereço no mapa</span>
+                </legend>
 
-        <fieldset>
-          <legend>
-            <h2>Fotos do pet</h2>
-            <span>Informe algumas fotos do pet perdido</span>
-          </legend>
-          <ul class="items-grid">
-            <li>
-              <!-- <img src="/Assets/Foto/foto01.png" alt=""> -->
-              <span>Foto 01</span>
-            </li>
-            <li>
-              <!-- <img src="/Assets/Foto/foto02.png" alt=""> -->
-              <span>Foto 02</span>
-            </li>
-            <li>
-              <!-- <img src="/Assets/Foto/foto03.png" alt=""> -->
-              <span>Foto 03</span>
-            </li>
-          </ul>
-        </fieldset>
+                <div id="map"></div>
 
-        <button type="submit" onclick="clicou()">Cadastrar o seu resgate</button>
-        <span id="cadastrou">
-          
-        </span>
-      </form>
+                <div class="field-group">
+                    <div class="field">
+                        <label for="uf">Estado (UF)</label>
+                        <select name="uf" id="uf">
+                            <option value="0">Selecione uma UF</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="cidade">Cidade</label>
+                        <select name="cidade" id="cidade">
+                            <option value="0">Selecione uma cidade</option>
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    <h2>Fotos do pet</h2>
+                    <span>Informe algumas fotos do pet perdido</span>
+                </legend>
+                <ul class="items-grid">
+                    <li>
+                        <output id="list"></output>
+                    </li>
+                    <li>
+                        <output id="list1"></output>
+                    </li>
+                    <li>
+                        <output id="list2"></output>
+                    </li>
+                </ul>
+            </fieldset>
+            <!-- <a href="../ProjetoPI/fistst/modal.html"> -->
+                <button type="submit">
+                    <a href="/tela-servico/index.html">
+                        Cadastrar o seu resgate
+                    </a>
+                </button>
+        </form>
     </div>
 
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-    <script src="js/index.js"></script>
-  </body>
+
+    <script type="text/javascript">
+      var element = document.getElementById("map");
+
+            /*
+            Build list of map types.
+            You can also use var mapTypeIds = ["roadmap", "satellite", "hybrid", "terrain", "OSM"]
+            but static lists suck when Google updates the default list of map types.
+            */
+
+            var mapTypeIds = [];
+
+            for (var type in google.maps.MapTypeId) {
+                mapTypeIds.push(google.maps.MapTypeId[type]);
+            }
+
+            mapTypeIds.push("OSM");
+
+            var map = new google.maps.Map(element, {
+                center: new google.maps.LatLng(-23.4914908, -46.718843),
+                zoom: 15,
+                mapTypeId: "OSM",
+                mapTypeControlOptions: {
+                    mapTypeIds: mapTypeIds
+                }
+            });
+
+            map.mapTypes.set("OSM", new google.maps.ImageMapType({
+                getTileUrl: function (coord, zoom) {
+                    // See above example if you need smooth wrapping at 180th meridian
+                    return "https://tile.openstreetmap.org/" + zoom + "/" + coord.x + "/" + coord.y + ".png";
+                },
+                tileSize: new google.maps.Size(256, 256),
+                name: "OpenStreetMap",
+                maxZoom: 18
+            }));
+    </script>
+
+    <script src="./js/upload.js"></script>
+</body>
+
 </html>

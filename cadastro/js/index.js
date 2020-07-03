@@ -86,7 +86,7 @@ document
 
 let form = document.getElementById('form_contato');
 
-form.addEventListener('submit', function(e) {
+form.addEventListener('click', function(e) {
   e.preventDefault();
   let er = new RegExp(/^[A-Za-z0-9_\-\.]+@[A-Za-z0-9_\-\.]{2,}\.[A-Za-z0-9]{2,}(\.[A-Za-z0-9])?/);
   1
@@ -105,16 +105,16 @@ form.addEventListener('submit', function(e) {
 });
 
 
-function clicou() {
+// function clicou() {
  
-  let x = document.getElementById('cadastrou');
+//   let x = document.getElementById('cadastrou');
 
-  if (x.style.display === "none") {
-    x.style.display = "block";
-    alert("Obrigado por preenche os dados");
+//   if (x.style.display === "none") {
+//     x.style.display = "block";
+//     alert("Obrigado por preenche os dados");
 
-    window.location.href = "http://www.w3schools.com"
-  } else {
-    x.style.display = "none";
-  }
-}
+//     window.location.href = "http://www.w3schools.com"
+//   } else {
+//     x.style.display = "none";
+//   }
+// }

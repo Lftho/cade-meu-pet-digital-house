@@ -1,0 +1,313 @@
+/* Fontes - Text Me One & Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Text+Me+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Text+Me+One&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F0F0F5;
+  height: 100vh;
+}
+
+.teste {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.card {
+  border-radius: 10px !important;
+}
+
+.card-teste {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-teste span {
+  font-size: 14px;
+}
+
+.semana {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-family: 'Roboto' sans-serif;
+  color: #CA9102;
+}
+
+
+/*-----------------------------------FOOTER COMEÇO----------------------------*/
+div.container-background{
+  background-color: #FFE4A0;
+}
+
+.footer-width {
+  margin-left: 50px !important;
+  margin-right: 50px !important;
+}
+
+.img-footer {
+  height: 40px;
+}
+
+.footer-auto-input {
+  display: flex;
+  margin: 0 auto;
+}
+
+.footer-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-input input {
+  padding: 10px 20px; 
+  border: 0px;
+  border-radius: 50px;
+
+
+  position: absolute;
+  top: 30px;
+  left: 25px;
+
+  width: 350px;
+}
+
+.input-size {
+  width: 20px;
+}
+
+.btn-input {
+  width: 100px;
+  border: 0px;
+  padding: 10px 20px; 
+  border-radius: 50px;
+  background-color: #EFAB01;
+  
+  position: absolute;
+  top: 30px;
+  right: -160px;
+  outline: none;
+}
+
+.btn-input span {
+  color: #fff;
+  font-weight: 700;
+}
+
+.redes-sociais {
+  display: flex;
+  justify-content: space-between;
+}
+
+.redes-sociais button {
+  background-color: violet;
+}
+
+.redes-sociais li a img {
+  height: 30px;
+}
+
+.copy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-copy {
+  height: 20px;
+}
+
+.footer-contact {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 57px;
+  background-color: #FFE4A0;
+  display: flex;
+
+  padding: 30px 70px;
+}
+
+.footer-contact img.footer-img  {
+  height: 40px;
+}
+
+.form-contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.form-contact form {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.form-email input {
+  height: 40px;
+  width: 300px;
+  border-radius: 60px;
+  border: 0;
+  font-size: 18px;
+  padding: 15px 20px;
+}
+
+.form-email a {
+  width: 100px;
+  height: 40px;
+  color: #fff;
+  border-radius: 60px;
+  background-color:#EFAB01;
+  position: absolute;
+  right: 530px;
+  text-decoration: none;
+}
+
+.form-email a:hover {
+  background-color:#EFAB01;
+  opacity: .9;
+  animation: linha linear .5s;
+}
+
+@keyframes linha{
+  from {
+    background-color: #EFAB01;
+    width: 7%;
+    animation: linear 2s;
+
+  }
+  to {
+    background-color:  #e8b32e;
+  }
+}
+
+.form-icons {
+  display: flex;
+  align-items: center;
+}
+
+.form-icons img {
+  margin-left: 25px;
+}
+
+.form-email span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 8px auto;
+
+  font-family: sans-serif;
+  font-weight: 700;
+}
+
+/* Footer - Dono da marca */
+.footer-responsavel{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 57px;
+  background-color:  #EFAB01;
+  color: white;
+  text-align: center;
+}
+
+.footer-responsavel span {
+  display: flex;
+  justify-content: center;
+  margin: 10px auto;
+  font-family: 'Text Me One';
+  font-size: 25px;
+  border: 2px solid #fff;
+  width: 200px;
+  border-radius: 8px;
+}
+
+.logo-font {
+  position: relative;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.carousel-control .glyphicon-chevron-left {
+  margin-left: -25px !important; 
+}
+
+.back {
+  background-color: #EFAB01;
+}
+
+/* info button */
+.info-pet {
+  display: flex;
+  align-items: center;
+}
+
+.info-pet span{
+  font-family: 'Roboto';
+  font-size: 16px;
+  margin: 5px;
+  text-decoration: underline;
+
+  color: #222;
+  font-weight: 800;
+}
+
+.text-mensagem {
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+  bottom: 13px;
+  left: 30px;
+  width: 100%;
+}
+
+.mensagem {
+  width: 600px;
+  position: relative;
+  top: 10px;
+}
+
+.text-center {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 10px;
+}
+
+/*-----------------------------------MEDIA QUERIES COMEÇO----------------------------*/
+/* @media screen and (min-width: 768px) {
+  .carousel-control .glyphicon-chevron-left {
+    margin-left: -20px !important; 
+  }
+} */
+
+
+@media (max-width: 375px) {
+  .footer-input {
+    display: none !important;
+  }
+
+  form.footer-input input {
+    display: none !important;
+  }
+
+  form#footer-input {
+    display: none;
+  }
+}
