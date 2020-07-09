@@ -88,6 +88,12 @@ header {
   }
 }
 
+@media screen and (max-width: 375px) {
+  .logo-container{
+    width: 95%;
+  }
+}
+
 .carousel-control .glyphicon-chevron-left {
   margin-left: -25px !important; 
 }
