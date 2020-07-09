@@ -7,6 +7,7 @@
   margin: 0;
   outline: none;
   box-sizing: border-box;
+  text-decoration: none !important;
 }
 
 body {
@@ -72,12 +73,9 @@ div.container-background{
   padding: 10px 20px; 
   border: 0px;
   border-radius: 50px;
-
-
   position: absolute;
   top: 30px;
   left: 25px;
-
   width: 350px;
 }
 
@@ -95,7 +93,7 @@ div.container-background{
   position: absolute;
   top: 30px;
   right: -160px;
-  outline: none;
+  outline: none !important;
 }
 
 .btn-input span {
@@ -266,6 +264,10 @@ div.container-background{
   font-weight: 800;
 }
 
+.info-pet span:hover {
+  color: #EFAB01;
+}
+
 .text-mensagem {
   display: flex;
   flex-direction: column;
@@ -290,15 +292,104 @@ div.container-background{
   bottom: 10px;
 }
 
+.container-nav {
+  width: 100%;
+  top: 5%;
+  background: #F0F0F5;
+  padding: 10px 15px;
+}
+
+a.nav-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 90%;
+  top: 5%;
+  background: #F0F0F5.
+}
+
+.nav-logo span {
+  color: #EFAB01;
+  font-size: 20px;
+  text-decoration: none;
+  border: 1px solid #EFAB01;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.nav-logo span:hover,
+.nav-logo span:focus {
+  color: #fff;
+  background-color: #EFAB01;
+  border: 1px solid #EFAB01;
+}
+
+.context-title {
+  position: absolute;
+  z-index: 2;
+  left: 10%;
+  top: 15%;
+}
+
+.context-title h2 {
+  color: #EFAB01;
+  font-family: 'Roboto', sans-serif;
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.context-title h4 {
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  position: absolute;
+  bottom: -40%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 50px;
+  z-index: 2;
+}
+
+.content {
+  width: 90%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+}
+
+.image-background {
+  position: relative;
+  left: 170px;
+}
+
+
+
 /*-----------------------------------MEDIA QUERIES COMEÇO----------------------------*/
-/* @media screen and (min-width: 768px) {
-  .carousel-control .glyphicon-chevron-left {
-    margin-left: -20px !important; 
+
+@media screen and (max-width: 375px) {
+  img.image-background {
+    display: none !important;
   }
-} */
 
+  .nav-logo {
+    display: flex;
+    flex-direction: column;
+  }
 
-@media (max-width: 375px) {
+  .nav-logo img {
+    height: 60px;
+    width: 80%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
   .footer-input {
     display: none !important;
   }

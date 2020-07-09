@@ -104,7 +104,7 @@ form.addEventListener('submit', function(e) {
   }
   
   //Se passou por essas validações exibe um alert
-  alert( 'formulário enviado com sucesso!' );
+  alert( 'formulário enviado com sucesso!', '<input type="submit" value="Confirmar">' );
 });
 
 
