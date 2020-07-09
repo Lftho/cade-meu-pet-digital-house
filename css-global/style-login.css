@@ -14,6 +14,7 @@ button, input {
 body {
   background-color: #F0F0F5;
 }
+
 #page-image {
   display: flex;
   flex-direction: row;
@@ -52,7 +53,6 @@ header {
 
   position: relative;
   top: 70px;
-  
 }
 
 .main h2 {
@@ -124,7 +124,18 @@ header {
   font-weight: bold;
 }
 
+.cadastra {
+  text-decoration: none !important;
+  color: #fff;
+}
+
+
 @media (max-width: 375px) {
+  .cadastra {
+    text-decoration: none !important;
+    color: #fff;
+  }
+
   #page-image {
     max-width: 375px;
     height: 100vh;

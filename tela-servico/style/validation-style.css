@@ -401,4 +401,9 @@ header {
   form#footer-input {
     display: none;
   }
+
+  .redes-sociais01 {
+    display: none !important;
+  }
+
 }

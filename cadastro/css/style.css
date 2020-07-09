@@ -306,11 +306,11 @@ body {
       } 
 
       
-#page-cadastro form {
-  padding: 20px;
-max-width: 730px;
+      #page-cadastro form {
+        padding: 20px;
+      max-width: 730px;
 
-}
+      }
 
 
       #page-cadastro form h1 {
@@ -360,4 +360,17 @@ max-width: 730px;
         margin-bottom: 46px;
     }
 
+}
+
+.cadastra {
+  text-decoration: none !important;
+  color: #fff;
+}
+
+
+@media (max-width: 375px) {
+  .cadastra {
+    text-decoration: none !important;
+    color: #fff;
+  }
 }
