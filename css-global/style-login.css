@@ -94,7 +94,7 @@ header {
 
 .btn-img {
   background-color: #E0A001;
-  border-radius: 8px 8px 0 0;
+  border-radius:8px 0px 0px 8px;
   height: 70px;
   width: 100px;
 
@@ -134,7 +134,7 @@ header {
   .btn-acessa {
     color: #fff;
     background-color: #EFAB01;
-    border-radius: 8px 0px 0px 8px;;
+    border-radius: 8px 0px 0px 8px;
   }
 
   .cadastra {
